@@ -65,7 +65,7 @@ author:
   bio    : "ECE @ UT Austin"
   location : "Austin, TX"
   links:
-    - label: "chenmuyang@utexas.edu"
+    - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:chenmuyang@utexas.edu"
     - label: "LinkedIn"
