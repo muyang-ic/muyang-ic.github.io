@@ -67,7 +67,7 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "chenmuyang@utexas.edu"
+      url: "mailto:chenmuyang@utexas.edu"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/muyang-chen-052800273/"
