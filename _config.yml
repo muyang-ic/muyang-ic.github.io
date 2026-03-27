@@ -22,7 +22,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Google search results) and in your feed.xml site description.
 #twitter_username: username
 github_username: username
-linkedin_username: muyang-chen-052800273
+#linkedin_username: muyang-chen-052800273
 minimal_mistakes_skin: default
 search: true
 
@@ -62,17 +62,24 @@ plugins:
 author:
   name   : "Muyang Chen"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  bio    : "ECE @ UT Austin"
+  location : "Austin, TX"
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://muyang-ic.github.io/"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "chenmuyang@utexas.edu"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/muyang-chen-052800273/"
+    #- label: "Website"
+    #  icon: "fas fa-fw fa-link"
+    #  url: "https://muyang-ic.github.io/"
     #- label: "Twitter"
     #  icon: "fab fa-fw fa-twitter-square"
     #  url: "https://twitter.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
+      url: "https://github.com/muyang-ic"
     #- label: "Instagram"
     #  icon: "fab fa-fw fa-instagram"
     #  url: "https://instagram.com/"
