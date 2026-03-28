@@ -142,22 +142,30 @@ America:
     title: "Yellowstone | Jul 2024"
 ---
 
-This is a gallery of my photography works
+I love photography!
 
-### 🇯🇵 Japan
-<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 15px; margin-bottom: 40px;">
+### Japan
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 15px; margin-bottom: 40px;">
   {% for img in page.Japan %}
-  <a href="{{ img.url }}" class="image-popup" style="display: block; width: 100%; height: 250px; border-radius: 6px; overflow: hidden; box-shadow: 0 3px 6px rgba(0,0,0,0.15);">
-    <img src="{{ img.image_path }}" title="{{ img.title }}" alt="{{ img.alt }}" style="width: 100%; height: 100%; object-fit: cover; margin: 0; display: block;" />
+  <a href="{{ img.url }}" class="image-popup" title="{{ img.title }}" 
+     onmouseover="this.style.boxShadow = '0 10px 20px rgba(0,0,0,0.2)'; this.style.transform = 'translateY(-5px)';"
+     onmouseout="this.style.boxShadow = 'none'; this.style.transform = 'translateY(0)';"
+     style="display: block; width: 100%; height: 200px; border-radius: 6px; overflow: hidden; 
+            box-shadow: none; transform: translateY(0); transition: all 0.2s ease-in-out; background: #eee;">
+    <img src="{{ img.image_path }}" alt="{{ img.alt }}" style="width: 100%; height: 100%; object-fit: cover; margin: 0; display: block;" />
   </a>
   {% endfor %}
 </div>
 
-### 🇺🇸 America
-<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 15px; margin-bottom: 40px;">
+### America
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 15px; margin-bottom: 40px;">
   {% for img in page.America %}
-  <a href="{{ img.url }}" class="image-popup" style="display: block; width: 100%; height: 250px; border-radius: 6px; overflow: hidden; box-shadow: 0 3px 6px rgba(0,0,0,0.15);">
-    <img src="{{ img.image_path }}" title="{{ img.title }}" alt="{{ img.alt }}" style="width: 100%; height: 100%; object-fit: cover; margin: 0; display: block;" />
+  <a href="{{ img.url }}" class="image-popup" title="{{ img.title }}" 
+     onmouseover="this.style.boxShadow = '0 10px 20px rgba(0,0,0,0.2)'; this.style.transform = 'translateY(-5px)';"
+     onmouseout="this.style.boxShadow = 'none'; this.style.transform = 'translateY(0)';"
+     style="display: block; width: 100%; height: 200px; border-radius: 6px; overflow: hidden; 
+            box-shadow: none; transform: translateY(0); transition: all 0.2s ease-in-out; background: #eee;">
+    <img src="{{ img.image_path }}" alt="{{ img.alt }}" style="width: 100%; height: 100%; object-fit: cover; margin: 0; display: block;" />
   </a>
   {% endfor %}
 </div>
