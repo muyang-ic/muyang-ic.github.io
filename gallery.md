@@ -142,38 +142,54 @@ America:
     title: "Yellowstone | Jul 2024"
 ---
 
+<style>
+  /* 1. 强制所有图片默认状态：启用硬件加速，开启微小阴影 */
+  #my-photography-gallery .gallery-card {
+    display: block !important;
+    width: 100% !important;
+    height: 200px !important;
+    border-radius: 6px !important;
+    overflow: hidden !important;
+    background: #eee !important;
+    text-decoration: none !important;
+    /* 核心性能：启用 GPU 加速 */
+    transform: translateZ(0) !important; 
+    will-change: transform, box-shadow !important;
+    /* 核心性能：精准的 CSS 过渡，绝不使用 'all' */
+    transition: transform 0.2s ease-out !important, box-shadow 0.2s ease-out !important;
+    /* 默认加一个极其微弱的阴影，让悬停时的变化更平滑 */
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05) !important;
+  }
+
+  /* 2. 强制原生 CSS 悬停效果：零延迟反馈 */
+  /* 当鼠标悬停在 .gallery-card 上时 */
+  #my-photography-gallery .gallery-card:hover {
+    transform: translateY(-5px) translateZ(0) !important; /* 微微上浮 */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important; /* 亮起阴影 */
+    z-index: 10 !important; /* 确保悬停的图片压住周围图片 */
+  }
+</style>
+
 I love photography!
 
-### Japan
-<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 15px; margin-bottom: 40px;">
-  {% for img in page.Japan %}
-  <a href="{{ img.url }}" class="image-popup" title="{{ img.title }}" 
-     onmouseover="this.style.boxShadow = '0 10px 20px rgba(0,0,0,0.2)'; this.style.transform = 'translateY(-5px) translateZ(0)';"
-     onmouseout="this.style.boxShadow = '0 2px 5px rgba(0,0,0,0.05)'; this.style.transform = 'translateY(0) translateZ(0)';"
-     style="display: block; width: 100%; height: 200px; border-radius: 6px; overflow: hidden; 
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05); 
-            transform: translateZ(0); 
-            will-change: transform, box-shadow;
-            transition: transform 0.2s ease-out, box-shadow 0.2s ease-out; 
-            background: #eee;">
-    <img src="{{ img.image_path }}" alt="{{ img.alt }}" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover; margin: 0; display: block;" />
-  </a>
-  {% endfor %}
-</div>
+<div id="my-photography-gallery">
 
-### America
-<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 15px; margin-bottom: 40px;">
-  {% for img in page.America %}
-  <a href="{{ img.url }}" class="image-popup" title="{{ img.title }}" 
-     onmouseover="this.style.boxShadow = '0 10px 20px rgba(0,0,0,0.2)'; this.style.transform = 'translateY(-5px) translateZ(0)';"
-     onmouseout="this.style.boxShadow = '0 2px 5px rgba(0,0,0,0.05)'; this.style.transform = 'translateY(0) translateZ(0)';"
-     style="display: block; width: 100%; height: 200px; border-radius: 6px; overflow: hidden; 
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05); 
-            transform: translateZ(0); 
-            will-change: transform, box-shadow;
-            transition: transform 0.2s ease-out, box-shadow 0.2s ease-out; 
-            background: #eee;">
-    <img src="{{ img.image_path }}" alt="{{ img.alt }}" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover; margin: 0; display: block;" />
-  </a>
-  {% endfor %}
+  ### Japan
+  <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 15px; margin-bottom: 40px;">
+    {% for img in page.Japan %}
+    <a href="{{ img.url }}" class="image-popup gallery-card" title="{{ img.title }}">
+      <img src="{{ img.image_path }}" alt="{{ img.alt }}" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover; margin: 0; display: block;" />
+    </a>
+    {% endfor %}
+  </div>
+
+  ### America
+  <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 15px; margin-bottom: 40px;">
+    {% for img in page.America %}
+    <a href="{{ img.url }}" class="image-popup gallery-card" title="{{ img.title }}">
+      <img src="{{ img.image_path }}" alt="{{ img.alt }}" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover; margin: 0; display: block;" />
+    </a>
+    {% endfor %}
+  </div>
+
 </div>
