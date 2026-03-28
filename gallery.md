@@ -148,10 +148,14 @@ I love photography!
 <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 15px; margin-bottom: 40px;">
   {% for img in page.Japan %}
   <a href="{{ img.url }}" class="image-popup" title="{{ img.title }}" 
-     onmouseover="this.style.boxShadow = '0 10px 20px rgba(0,0,0,0.2)'; this.style.transform = 'translateY(-5px)';"
-     onmouseout="this.style.boxShadow = 'none'; this.style.transform = 'translateY(0)';"
+     onmouseover="this.style.boxShadow = '0 10px 20px rgba(0,0,0,0.2)'; this.style.transform = 'translateY(-5px) translateZ(0)';"
+     onmouseout="this.style.boxShadow = '0 2px 5px rgba(0,0,0,0.05)'; this.style.transform = 'translateY(0) translateZ(0)';"
      style="display: block; width: 100%; height: 200px; border-radius: 6px; overflow: hidden; 
-            box-shadow: none; transform: translateY(0); transition: all 0.2s ease-in-out; background: #eee;">
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05); 
+            transform: translateZ(0); 
+            will-change: transform, box-shadow;
+            transition: transform 0.2s ease-out, box-shadow 0.2s ease-out; 
+            background: #eee;">
     <img src="{{ img.image_path }}" alt="{{ img.alt }}" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover; margin: 0; display: block;" />
   </a>
   {% endfor %}
@@ -161,10 +165,14 @@ I love photography!
 <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 15px; margin-bottom: 40px;">
   {% for img in page.America %}
   <a href="{{ img.url }}" class="image-popup" title="{{ img.title }}" 
-     onmouseover="this.style.boxShadow = '0 10px 20px rgba(0,0,0,0.2)'; this.style.transform = 'translateY(-5px)';"
-     onmouseout="this.style.boxShadow = 'none'; this.style.transform = 'translateY(0)';"
+     onmouseover="this.style.boxShadow = '0 10px 20px rgba(0,0,0,0.2)'; this.style.transform = 'translateY(-5px) translateZ(0)';"
+     onmouseout="this.style.boxShadow = '0 2px 5px rgba(0,0,0,0.05)'; this.style.transform = 'translateY(0) translateZ(0)';"
      style="display: block; width: 100%; height: 200px; border-radius: 6px; overflow: hidden; 
-            box-shadow: none; transform: translateY(0); transition: all 0.2s ease-in-out; background: #eee;">
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05); 
+            transform: translateZ(0); 
+            will-change: transform, box-shadow;
+            transition: transform 0.2s ease-out, box-shadow 0.2s ease-out; 
+            background: #eee;">
     <img src="{{ img.image_path }}" alt="{{ img.alt }}" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover; margin: 0; display: block;" />
   </a>
   {% endfor %}
