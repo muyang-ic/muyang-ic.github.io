@@ -178,7 +178,7 @@ America:
     width: 100% !important; 
     height: 100% !important;
     border-radius: 6px !important;
-    box-shadow: 0 12px 24px rgba(0,0,0,0.2) !important; /* 设定最终悬停时的高级阴影 */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15) !important; /* 设定最终悬停时的高级阴影 */
     opacity: 0 !important; /* 默认完全透明，不消耗渲染性能 */
     transition: opacity 0.25s ease-in-out !important; /* 只做透明度动画，极其丝滑 */
     z-index: 1 !important;
