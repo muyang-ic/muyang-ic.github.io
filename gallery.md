@@ -144,5 +144,20 @@ America:
 
 This is a gallery of my photography works
 
-{% include gallery id="Japan" caption="Japan" %}
-{% include gallery id="America" caption="America" %}
+### 🇯🇵 Japan
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 15px; margin-bottom: 40px;">
+  {% for img in page.Japan %}
+  <a href="{{ img.url }}" class="image-popup" style="display: block; width: 100%; height: 250px; border-radius: 6px; overflow: hidden; box-shadow: 0 3px 6px rgba(0,0,0,0.15);">
+    <img src="{{ img.image_path }}" title="{{ img.title }}" alt="{{ img.alt }}" style="width: 100%; height: 100%; object-fit: cover; margin: 0; display: block;" />
+  </a>
+  {% endfor %}
+</div>
+
+### 🇺🇸 America
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 15px; margin-bottom: 40px;">
+  {% for img in page.America %}
+  <a href="{{ img.url }}" class="image-popup" style="display: block; width: 100%; height: 250px; border-radius: 6px; overflow: hidden; box-shadow: 0 3px 6px rgba(0,0,0,0.15);">
+    <img src="{{ img.image_path }}" title="{{ img.title }}" alt="{{ img.alt }}" style="width: 100%; height: 100%; object-fit: cover; margin: 0; display: block;" />
+  </a>
+  {% endfor %}
+</div>
