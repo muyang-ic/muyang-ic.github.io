@@ -152,7 +152,7 @@ I love photography!
      onmouseout="this.style.boxShadow = 'none'; this.style.transform = 'translateY(0)';"
      style="display: block; width: 100%; height: 200px; border-radius: 6px; overflow: hidden; 
             box-shadow: none; transform: translateY(0); transition: all 0.2s ease-in-out; background: #eee;">
-    <img src="{{ img.image_path }}" alt="{{ img.alt }}" style="width: 100%; height: 100%; object-fit: cover; margin: 0; display: block;" />
+    <img src="{{ img.image_path }}" alt="{{ img.alt }}" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover; margin: 0; display: block;" />
   </a>
   {% endfor %}
 </div>
@@ -165,7 +165,7 @@ I love photography!
      onmouseout="this.style.boxShadow = 'none'; this.style.transform = 'translateY(0)';"
      style="display: block; width: 100%; height: 200px; border-radius: 6px; overflow: hidden; 
             box-shadow: none; transform: translateY(0); transition: all 0.2s ease-in-out; background: #eee;">
-    <img src="{{ img.image_path }}" alt="{{ img.alt }}" style="width: 100%; height: 100%; object-fit: cover; margin: 0; display: block;" />
+    <img src="{{ img.image_path }}" alt="{{ img.alt }}" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover; margin: 0; display: block;" />
   </a>
   {% endfor %}
 </div>
