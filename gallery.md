@@ -7,7 +7,7 @@ Japan:
   #- url: /assets/gallery_images/Japan/
   #  image_path: /assets/gallery_images/Japan/
   #  alt: ""
-  #  title: ""
+  #  title: "" 
   - url: /assets/gallery_images/Japan/fuji_1.jpg
     image_path: /assets/gallery_images/Japan/fuji_1.jpg
     alt: "Fuji"
