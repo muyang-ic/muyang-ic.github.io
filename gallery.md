@@ -204,7 +204,7 @@ I love photography!
 
 <div id="my-photography-gallery">
 
-  ### Japan
+  Japan
   <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 15px; margin-bottom: 40px;">
     {% for img in page.Japan %}
     <a href="{{ img.url }}" class="image-popup gallery-card" title="{{ img.title }}">
@@ -213,7 +213,7 @@ I love photography!
     {% endfor %}
   </div>
 
-  ### America
+  America
   <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 15px; margin-bottom: 40px;">
     {% for img in page.America %}
     <a href="{{ img.url }}" class="image-popup gallery-card" title="{{ img.title }}">
