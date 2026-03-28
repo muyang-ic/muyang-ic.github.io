@@ -73,8 +73,8 @@ Japan:
     alt: "Night View"
     title: "Tokyo Night View | Ebisu | Dec 2023"
 
-  - url: /assets/gallery_images/Japan/hokaido_1.jpg
-    image_path: /assets/gallery_images/Japan/hokaido_1.jpg
+  - url: /assets/gallery_images/Japan/hokaido_1.png
+    image_path: /assets/gallery_images/Japan/hokaido_1.png
     alt: "Swan"
     title: "Swan | Kussharoko | Dec 2023"
 
@@ -146,3 +146,13 @@ This is a gallery of my photography works
 
 {% include gallery id="Japan" caption="Japan" %}
 {% include gallery id="America" caption="America" %}
+
+<style>
+  /* 专门针对 gallery 里的图片强制统一尺寸 */
+  .gallery img {
+    height: 200px;       /* 网格高度 */
+    width: 100%;         /* 强制宽度占满它所在的列 */
+    object-fit: cover;   /* 填满 */
+    border-radius: 6px;  /* 圆角 */
+  }
+</style>
