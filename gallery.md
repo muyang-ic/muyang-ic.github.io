@@ -143,30 +143,57 @@ America:
 ---
 
 <style>
-  /* 1. 强制所有图片默认状态：启用硬件加速，开启微小阴影 */
+  /* 1. 基础相框设定（移除了极其消耗显存的 will-change） */
   #my-photography-gallery .gallery-card {
+    position: relative !important; /* 核心：为阴影伪元素提供定位参照 */
     display: block !important;
     width: 100% !important;
     height: 200px !important;
     border-radius: 6px !important;
-    overflow: hidden !important;
+    overflow: visible !important; /* 修改为 visible，防止切断外部阴影 */
     background: #eee !important;
     text-decoration: none !important;
-    /* 核心性能：启用 GPU 加速 */
+    
+    /* 只保留最轻量的位移加速和动画 */
     transform: translateZ(0) !important; 
-    will-change: transform, box-shadow !important;
-    /* 核心性能：精准的 CSS 过渡，绝不使用 'all' */
-    transition: transform 0.2s ease-out !important, box-shadow 0.2s ease-out !important;
-    /* 默认加一个极其微弱的阴影，让悬停时的变化更平滑 */
-    box-shadow: 0 1px 3px rgba(0,0,0,0.05) !important;
+    transition: transform 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important; 
   }
 
-  /* 2. 强制原生 CSS 悬停效果：零延迟反馈 */
-  /* 当鼠标悬停在 .gallery-card 上时 */
+  /* 2. 内部图片设定，确保圆角不受 overflow: visible 影响 */
+  #my-photography-gallery .gallery-card img {
+    width: 100% !important; 
+    height: 100% !important; 
+    object-fit: cover !important; 
+    border-radius: 6px !important; 
+    position: relative !important;
+    z-index: 2 !important;
+  }
+
+  /* 3. 神奇的伪元素：提前渲染好阴影，但平时保持透明 (opacity: 0) */
+  #my-photography-gallery .gallery-card::after {
+    content: '' !important;
+    position: absolute !important;
+    top: 0 !important; 
+    left: 0 !important; 
+    width: 100% !important; 
+    height: 100% !important;
+    border-radius: 6px !important;
+    box-shadow: 0 12px 24px rgba(0,0,0,0.2) !important; /* 设定最终悬停时的高级阴影 */
+    opacity: 0 !important; /* 默认完全透明，不消耗渲染性能 */
+    transition: opacity 0.25s ease-in-out !important; /* 只做透明度动画，极其丝滑 */
+    z-index: 1 !important;
+    pointer-events: none !important;
+  }
+
+  /* 4. 悬停触发动作：外框上浮，阴影图层显现 */
   #my-photography-gallery .gallery-card:hover {
-    transform: translateY(-5px) translateZ(0) !important; /* 微微上浮 */
-    box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important; /* 亮起阴影 */
-    z-index: 10 !important; /* 确保悬停的图片压住周围图片 */
+    transform: translateY(-5px) !important;
+    z-index: 10 !important;
+  }
+  
+  /* 鼠标悬停时，阴影图层透明度从 0 变 1 */
+  #my-photography-gallery .gallery-card:hover::after {
+    opacity: 1 !important; 
   }
 </style>
 
