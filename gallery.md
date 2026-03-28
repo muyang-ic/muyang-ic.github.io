@@ -143,23 +143,23 @@ America:
 ---
 
 <style>
-  /* 1. 基础相框设定（移除了极其消耗显存的 will-change） */
+  /* 1. 基础相框设定：移除了所有 transform 和 0-阴影 */
   #my-photography-gallery .gallery-card {
-    position: relative !important; /* 核心：为阴影伪元素提供定位参照 */
+    position: relative !important;
     display: block !important;
     width: 100% !important;
     height: 200px !important;
     border-radius: 6px !important;
-    overflow: visible !important; /* 修改为 visible，防止切断外部阴影 */
+    overflow: visible !important; /* 核心：防止阴影被切断 */
     background: #eee !important;
     text-decoration: none !important;
     
-    /* 只保留最轻量的位移加速和动画 */
-    transform: translateZ(0) !important; 
-    transition: transform 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important; 
+    /* 去掉了 transform: translateZ(0)，防止占用显存 */
+    /* 只保留最轻量的 opacity 过渡 */
+    transition: none !important; 
   }
 
-  /* 2. 内部图片设定，确保圆角不受 overflow: visible 影响 */
+  /* 2. 内部图片设定 */
   #my-photography-gallery .gallery-card img {
     width: 100% !important; 
     height: 100% !important; 
@@ -169,7 +169,7 @@ America:
     z-index: 2 !important;
   }
 
-  /* 3. 神奇的伪元素：提前渲染好阴影，但平时保持透明 (opacity: 0) */
+  /* 3. 神奇的伪元素：提前渲染好阴影，平时保持透明 (opacity: 0) */
   #my-photography-gallery .gallery-card::after {
     content: '' !important;
     position: absolute !important;
@@ -178,17 +178,20 @@ America:
     width: 100% !important; 
     height: 100% !important;
     border-radius: 6px !important;
-    box-shadow: 0 6px 12px rgba(0,0,0,0.15) !important; /* 设定最终悬停时的高级阴影 */
+    
+    /* 🎨 这里调节悬停时阴影的大小：建议使用稍微克制一点的数值 */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2) !important; 
+    
     opacity: 0 !important; /* 默认完全透明，不消耗渲染性能 */
-    transition: opacity 0.25s ease-in-out !important; /* 只做透明度动画，极其丝滑 */
+    transition: opacity 0.2s ease-out !important; /* 只做透明度动画，极其丝滑 */
     z-index: 1 !important;
     pointer-events: none !important;
   }
 
-  /* 4. 悬停触发动作：外框上浮，阴影图层显现 */
+  /* 4. 悬停触发动作：去掉了位移，只让阴影图层显现 */
+  /* 当鼠标悬停在 .gallery-card 上时 */
   #my-photography-gallery .gallery-card:hover {
-    transform: translateY(-5px) !important;
-    z-index: 10 !important;
+    z-index: 10 !important; /* 确保悬停的图片压住周围图片 */
   }
   
   /* 鼠标悬停时，阴影图层透明度从 0 变 1 */
