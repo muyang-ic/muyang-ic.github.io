@@ -1,15 +1,15 @@
 ---
-title: "Photography Gallery"
+title: "Gallery"
 layout: single
 author_profile: true
 # 下面定义你的图片数组
-my_photos:
+Japan:
   - url: /assets/gallery_images/fuji_1.jpg
-    image_path: /assets/gallery_images/fuji1.jpg
+    image_path: /assets/gallery_images/fuji_1.jpg
     alt: "Fuji Mountain"
     title: "Fuji Mountain"
 ---
 
-这里可以写一小段你的摄影理念介绍。点击下方图片可以查看大图。
+This is a gallery of my photography works
 
-{% include gallery id="my_photos" caption="My Photography Works" %}
+{% include gallery id="Japan" caption="Japan" %}
