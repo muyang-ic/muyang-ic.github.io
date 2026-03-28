@@ -148,11 +148,12 @@ This is a gallery of my photography works
 {% include gallery id="America" caption="America" %}
 
 <style>
-  /* 专门针对 gallery 里的图片强制统一尺寸 */
-  .gallery img {
-    height: 200px;       /* 网格高度 */
-    width: 100%;         /* 强制宽度占满它所在的列 */
-    object-fit: cover;   /* 填满 */
-    border-radius: 6px;  /* 圆角 */
+  /* 加上 !important 强制覆盖主题的默认设定 */
+  .gallery__item img, .gallery img {
+    height: 220px !important;      /* 网格高度，如果觉得图片被裁切太多，可以改小到 180px 或者 200px */
+    width: 100% !important;        /* 强制宽度占满它所在的列 */
+    object-fit: cover !important;  /* 核心魔法：像相框一样裁剪填满，保证图片不变形 */
+    border-radius: 6px !important; /* 增加一点圆角让照片显得更精致 */
+    margin-bottom: 0 !important;   /* 防止图片下方出现多余的白边缝隙 */
   }
 </style>
