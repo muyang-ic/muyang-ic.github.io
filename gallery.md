@@ -141,19 +141,25 @@ America:
     alt: "Yellowstone"
     title: "Yellowstone | Jul 2024"
 ---
+<style>
+  /* 使用最高层级选择器，彻底覆盖主题默认样式 */
+  .page__content figure.gallery .gallery__item img {
+    height: 220px !important;      /* 强制高度 */
+    width: 100% !important;        /* 强制宽度 */
+    object-fit: cover !important;  /* 像相框一样完美裁剪填满 */
+    object-position: center !important; /* 保证裁剪时主角在正中间 */
+    border-radius: 6px !important;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1) !important; /* 顺便加个微弱的高级感阴影 */
+  }
+
+  /* 修复外层链接包裹器可能导致的塌陷问题 */
+  .page__content figure.gallery .gallery__item a {
+    display: block !important;
+    width: 100% !important;
+  }
+</style>
 
 This is a gallery of my photography works
 
 {% include gallery id="Japan" caption="Japan" %}
 {% include gallery id="America" caption="America" %}
-
-<style>
-  /* 加上 !important 强制覆盖主题的默认设定 */
-  .gallery__item img, .gallery img {
-    height: 100px !important;      /* 网格高度，如果觉得图片被裁切太多，可以改小到 180px 或者 200px */
-    width: 100% !important;        /* 强制宽度占满它所在的列 */
-    object-fit: cover !important;  /* 核心魔法：像相框一样裁剪填满，保证图片不变形 */
-    border-radius: 6px !important; /* 增加一点圆角让照片显得更精致 */
-    margin-bottom: 0 !important;   /* 防止图片下方出现多余的白边缝隙 */
-  }
-</style>
