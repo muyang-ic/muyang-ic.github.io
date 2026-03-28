@@ -150,7 +150,7 @@ This is a gallery of my photography works
 <style>
   /* 加上 !important 强制覆盖主题的默认设定 */
   .gallery__item img, .gallery img {
-    height: 220px !important;      /* 网格高度，如果觉得图片被裁切太多，可以改小到 180px 或者 200px */
+    height: 100px !important;      /* 网格高度，如果觉得图片被裁切太多，可以改小到 180px 或者 200px */
     width: 100% !important;        /* 强制宽度占满它所在的列 */
     object-fit: cover !important;  /* 核心魔法：像相框一样裁剪填满，保证图片不变形 */
     border-radius: 6px !important; /* 增加一点圆角让照片显得更精致 */
