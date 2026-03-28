@@ -83,6 +83,7 @@ Japan:
     alt: "Kamakura"
     title: "Kamakura | May 2024"
 
+
   
 America:
   - url: /assets/gallery_images/America/Colorado_1.jpg
@@ -139,6 +140,7 @@ America:
     image_path: /assets/gallery_images/America/Yellowstone_2.jpg
     alt: "Yellowstone"
     title: "Yellowstone | Jul 2024"
+---
 
 This is a gallery of my photography works
 
