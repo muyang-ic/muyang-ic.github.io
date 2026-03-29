@@ -3,7 +3,6 @@ title: "America"
 layout: single
 author_profile: true
 permalink: /america/
-# 把你之前写的所有 Japan 图片信息粘贴在下面
 America:
   - url: /assets/gallery_images/America/Colorado_1.jpg
     image_path: /assets/gallery_images/America/Colorado_1.jpg
@@ -159,7 +158,7 @@ America:
 
 <div id="my-photography-gallery">
   <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 15px; margin-bottom: 40px;">
-    {% for img in page.Japan %}
+    {% for img in page.America %}
     <a href="{{ img.url }}" class="image-popup gallery-card" title="{{ img.title }}">
       <img src="{{ img.image_path }}" alt="{{ img.alt }}" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover; margin: 0; display: block;" />
     </a>

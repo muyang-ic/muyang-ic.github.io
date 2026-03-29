@@ -3,7 +3,6 @@ title: "Japan"
 layout: single
 author_profile: true
 permalink: /japan/
-# 把你之前写的所有 Japan 图片信息粘贴在下面
 Japan:
   - url: /assets/gallery_images/Japan/fuji_1.jpg
     image_path: /assets/gallery_images/Japan/fuji_1.jpg
