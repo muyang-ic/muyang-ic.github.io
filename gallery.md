@@ -62,7 +62,7 @@ This is a collection of my photography works. Select an album to explore.
 
   .category-content h2 {
     color: white;
-    font-size: 2.5rem;
+    font-size: 2.0rem;
     font-weight: bold;
     margin: 0;
     text-shadow: 0 2px 10px rgba(0,0,0,0.5); /* 给文字加上黑阴影防止看不清 */
