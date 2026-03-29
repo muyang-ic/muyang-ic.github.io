@@ -83,6 +83,53 @@ Japan:
     alt: "Kamakura"
     title: "Kamakura | May 2024"
 
+  - url: /assets/gallery_images/Japan/Asakusa_1.jpg
+    image_path: /assets/gallery_images/Japan/Asakusa_1.jpg
+    alt: "Asakusa"
+    title: "Asakusa Temple | Asakusa | Jan 2026" 
+
+  - url: /assets/gallery_images/Japan/Asakusa_2.jpg
+    image_path: /assets/gallery_images/Japan/Asakusa_2.jpg
+    alt: "Asakusa"
+    title: "Asakusa | Jan 2026" 
+
+  - url: /assets/gallery_images/Japan/ebisu_3.jpg
+    image_path: /assets/gallery_images/Japan/ebisu_3.jpg
+    alt: "ebisu"
+    title: "Ebisu | Dec 2023" 
+
+  - url: /assets/gallery_images/Japan/hakone_2.jpg
+    image_path: /assets/gallery_images/Japan/hakone_2.jpg
+    alt: "hakone"
+    title: "Hakone | Dec 2023" 
+
+  - url: /assets/gallery_images/Japan/hokaido_2.jpg
+    image_path: /assets/gallery_images/Japan/hokaido_2.jpg
+    alt: "hokaido"
+    title: "Kussharoko | Dec 2023" 
+
+  - url: /assets/gallery_images/Japan/hokaido_5.jpg
+    image_path: /assets/gallery_images/Japan/hokaido_5.jpg
+    alt: "hokaido"
+    title: "East Hokaido | Dec 2025" 
+
+  - url: /assets/gallery_images/Japan/hokaido_6.jpg
+    image_path: /assets/gallery_images/Japan/hokaido_6.jpg
+    alt: "hokaido"
+    title: "Swan | Kussharoko | Dec 2023" 
+
+  - url: /assets/gallery_images/Japan/hokaido_8.jpg
+    image_path: /assets/gallery_images/Japan/hokaido_8.jpg
+    alt: "hokaido"
+    title: "East Hokaido | Dec 2023" 
+
+  - url: /assets/gallery_images/Japan/hokaido_9.jpg
+    image_path: /assets/gallery_images/Japan/hokaido_9.jpg
+    alt: "hokaido"
+    title: "East Hokaido | Dec 2023" 
+
+
+
 
   
 America:
