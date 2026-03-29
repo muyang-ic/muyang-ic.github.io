@@ -67,7 +67,7 @@ This is a collection of my photography works. Select an album to explore.
     margin: 0;
     text-shadow: 0 2px 10px rgba(0,0,0,0.5); /* 给文字加上黑阴影防止看不清 */
     letter-spacing: 3px;
-    text-transform: uppercase; /* 强制大写显得更专业 */
+    /*text-transform: uppercase;*/ /* 强制大写显得更专业 */
   }
 </style>
 
