@@ -114,13 +114,13 @@ America:
     alt: "eclipse"
     title: "Eclipse | Apr 2024" 
 
-  - url: /assets/gallery_images/America/north texas_1.jpg
-    image_path: /assets/gallery_images/America/north texas_1.jpg
+  - url: /assets/gallery_images/America/north_texas_1.jpg
+    image_path: /assets/gallery_images/America/north_texas_1.jpg
     alt: "north texas"
     title: "North Texas | Jul 2024" 
 
-  - url: /assets/gallery_images/America/north texas_2.jpg
-    image_path: /assets/gallery_images/America/north texas_2.jpg
+  - url: /assets/gallery_images/America/north_texas_2.jpg
+    image_path: /assets/gallery_images/America/north_texas_2.jpg
     alt: "north texas"
     title: "Silos | North Texas | Jul 2024" 
 
