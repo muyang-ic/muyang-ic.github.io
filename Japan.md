@@ -125,7 +125,7 @@ Japan:
     title: "East Hokaido | Dec 2023" 
 ---
 
-<p><a href="/gallery/" style="text-decoration: none; font-weight: bold;">&larr; Back to Gallery</a></p>
+<p><a href="/gallery/" style="text-decoration: none; font-weight: bold; color: #1976D2;">&larr; Back to Gallery</a></p>
 
 <style>
   #my-photography-gallery .gallery-card {
