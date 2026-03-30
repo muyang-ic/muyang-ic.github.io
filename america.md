@@ -2,7 +2,7 @@
 title: "America"
 layout: single
 author_profile: true
-permalink: /america/
+permalink: https://muyang-ic.github.io/america/
 America:
   - url: /assets/gallery_images/America/Colorado_1.jpg
     image_path: /assets/gallery_images/America/Colorado_1.jpg
@@ -135,7 +135,7 @@ America:
     title: "Wyoming | Jul 2024" 
 ---
 
-<p><a href="/gallery/" style="text-decoration: none; font-weight: bold; color: #1976D2;">&larr; Back to Gallery</a></p>
+<p><a href="/gallery/" style="text-decoration: none; font-weight: bold; ">&larr; Back to Gallery</a></p>
 
 <style>
   #my-photography-gallery .gallery-card {
