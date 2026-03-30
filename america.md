@@ -2,7 +2,7 @@
 title: "America"
 layout: single
 author_profile: true
-permalink: https://muyang-ic.github.io/america/
+permalink: /america/
 America:
   - url: /assets/gallery_images/America/Colorado_1.jpg
     image_path: /assets/gallery_images/America/Colorado_1.jpg
