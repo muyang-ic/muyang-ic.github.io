@@ -2,7 +2,7 @@
 title: "Japan"
 layout: single
 author_profile: true
-permalink: https://muyang-ic.github.io/japan/
+permalink: /japan/
 Japan:
   - url: /assets/gallery_images/Japan/fuji_1.jpg
     image_path: /assets/gallery_images/Japan/fuji_1.jpg
