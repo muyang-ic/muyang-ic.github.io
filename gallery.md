@@ -18,18 +18,23 @@ This is a collection of my photography works. Select an album to explore.
   
   .category-card {
     position: relative;
-    height: 250px; /* 封面卡片的高度 */
+    height: 250px; 
     border-radius: 12px;
     overflow: hidden;
+    /* 💡 下面这两行是彻底去除默认下划线和底部边框的绝杀 */
     text-decoration: none !important;
+    border-bottom: none !important; 
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    transform: translateZ(0); /* 开启硬件加速 */
+    transform: translateZ(0); 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
   .category-card:hover {
-    transform: translateY(-8px); /* 悬停时卡片整体上浮 */
+    transform: translateY(-8px); 
     box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    /* 💡 悬停时也要确保不出现下划线 */
+    text-decoration: none !important;
+    border-bottom: none !important; 
   }
 
   /* 提取你最满意的一张照片作为底层背景，并进行轻度模糊 */
@@ -62,12 +67,14 @@ This is a collection of my photography works. Select an album to explore.
 
   .category-content h2 {
     color: white;
-    font-size: 2.0rem;
+    font-size: 2rem;
     font-weight: bold;
     margin: 0;
-    text-shadow: 0 2px 10px rgba(0,0,0,0.5); /* 给文字加上黑阴影防止看不清 */
+    text-shadow: 0 2px 10px rgba(0,0,0,0.5); 
     letter-spacing: 3px;
-    /*text-transform: uppercase;*/ /* 强制大写显得更专业 */
+    /* 💡 双重保险，防止主题从标题层级强加下划线 */
+    text-decoration: none !important;
+    border-bottom: none !important;
   }
 </style>
 
