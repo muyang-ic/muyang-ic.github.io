@@ -123,6 +123,57 @@ Japan:
     image_path: /assets/gallery_images/Japan/hokaido_9.jpg
     alt: "hokaido"
     title: "East Hokaido | Dec 2023" 
+
+  - url: /assets/gallery_images/Japan/hokaido_10.jpg
+    image_path: /assets/gallery_images/Japan/hokaido_10.jpg
+    alt: "hokaido"
+    title: "East Hokaido | Dec 2023" 
+
+  - url: /assets/gallery_images/Japan/hokaido_12.jpg
+    image_path: /assets/gallery_images/Japan/hokaido_12.jpg
+    alt: "hokaido"
+    title: "East Hokaido | Dec 2023" 
+
+  - url: /assets/gallery_images/Japan/hokaido_13.jpg
+    image_path: /assets/gallery_images/Japan/hokaido_13.jpg
+    alt: "hokaido"
+    title: "Shiretoko | Dec 2023" 
+
+  - url: /assets/gallery_images/Japan/hokaido_14.jpg
+    image_path: /assets/gallery_images/Japan/hokaido_14.jpg
+    alt: "hokaido"
+    title: "Shiretoko | Dec 2023" 
+
+  - url: /assets/gallery_images/Japan/hokaido_15.jpg
+    image_path: /assets/gallery_images/Japan/hokaido_15.jpg
+    alt: "hokaido"
+    title: "Shiretoko | Dec 2023" 
+
+  - url: /assets/gallery_images/Japan/kamakura_3.jpg
+    image_path: /assets/gallery_images/Japan/kamakura_3.jpg
+    alt: "kamakura"
+    title: "Kamakura | May 2024" 
+
+  - url: /assets/gallery_images/Japan/kamakura_4.jpg
+    image_path: /assets/gallery_images/Japan/kamakura_4.jpg
+    alt: "kamakura"
+    title: "Kamakura | May 2024" 
+
+  - url: /assets/gallery_images/Japan/kamakura_5.jpg
+    image_path: /assets/gallery_images/Japan/kamakura_5.jpg
+    alt: "kamakura"
+    title: "Kamakura | May 2024" 
+
+  - url: /assets/gallery_images/Japan/ueno_3.jpg
+    image_path: /assets/gallery_images/Japan/ueno_3.jpg
+    alt: "ueno"
+    title: "Subway | Ueno | Jan 2026" 
+
+  - url: /assets/gallery_images/Japan/ueno_5.jpg
+    image_path: /assets/gallery_images/Japan/ueno_5.jpg
+    alt: "ueno"
+    title: "Ueno | Jan 2026" 
+
 ---
 
 <p><a href="/gallery/" style="text-decoration: none; font-weight: bold;">&larr; Back to Gallery</a></p>
