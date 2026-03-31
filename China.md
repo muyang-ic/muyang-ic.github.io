@@ -4,10 +4,40 @@ layout: single
 author_profile: true
 permalink: /china/
 China:
-  - url: /assets/gallery_images/America/Colorado_1.jpg
-    image_path: /assets/gallery_images/America/Colorado_1.jpg
-    alt: "Scrap Car"
-    title: "Scrap Car | Colorado | Jul 2024"
+  - url: /assets/gallery_images/China/Cat_1.jpg
+    image_path: /assets/gallery_images/China/Cat_1.jpg
+    alt: "cat"
+    title: "Cat | Shanghai | Dec 2025"
+
+  - url: /assets/gallery_images/China/Cat_2.jpg
+    image_path: /assets/gallery_images/China/Cat_2.jpg
+    alt: "cat"
+    title: "Cat | Shanghai | Dec 2025"
+
+  - url: /assets/gallery_images/China/Cat_3.jpg
+    image_path: /assets/gallery_images/China/Cat_3.jpg
+    alt: "cat"
+    title: "Cat | Shanghai | Dec 2025"
+
+  - url: /assets/gallery_images/China/Huangshan.jpg
+    image_path: /assets/gallery_images/China/Huangshan.jpg
+    alt: "huangshan"
+    title: "Huangshan | Anhui | Jan 2026"
+
+  - url: /assets/gallery_images/China/Hunan_3.jpg
+    image_path: /assets/gallery_images/China/Hunan_3.jpg
+    alt: "hunan"
+    title: "Hunan | Jul 2024"
+
+  - url: /assets/gallery_images/China/Hunan_2.jpg
+    image_path: /assets/gallery_images/China/Hunan_2.jpg
+    alt: "hunan"
+    title: "Hunan | Jul 2024"
+
+  - url: /assets/gallery_images/China/MilkyWay.jpg
+    image_path: /assets/gallery_images/China/MilkyWay.jpg
+    alt: "milkyway"
+    title: "MilkyWay | Chongming | Aug 2023"
 
 ---
 

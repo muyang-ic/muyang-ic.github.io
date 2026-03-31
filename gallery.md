@@ -94,7 +94,7 @@ This is a collection of my photography works. Select an album to explore.
   </a>
 
   <a href="/china/" class="category-card">
-    <div class="category-bg" style="background-image: url('/assets/gallery_images/China/');"></div>
+    <div class="category-bg" style="background-image: url('/assets/gallery_images/China/Huangshan.jpg');"></div>
     <div class="category-content">
       <h2>China</h2>
     </div>
