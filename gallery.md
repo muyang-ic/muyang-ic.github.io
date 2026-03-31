@@ -92,4 +92,11 @@ This is a collection of my photography works. Select an album to explore.
       <h2>America</h2>
     </div>
   </a>
+
+  <a href="/china/" class="category-card">
+    <div class="category-bg" style="background-image: url('/assets/gallery_images/China/');"></div>
+    <div class="category-content">
+      <h2>China</h2>
+    </div>
+  </a>
 </div>
