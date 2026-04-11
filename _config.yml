@@ -37,6 +37,7 @@ timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 include:
   - _pages
+  - _portfolio  #在这里编辑主页包含哪些内容
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -115,6 +116,14 @@ defaults:
     values:
       layout: single
       author_profile: true
+  #p _ortfolio
+  - scope:
+      path: "_portfolio"
+      type: portfolio
+    values:
+      layout: single
+      author_profile: true
+      share: true
 
 category_archive:
   type: liquid

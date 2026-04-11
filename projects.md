@@ -1,6 +1,19 @@
+#---
+#title: "Projects"
+#layout: categories
+#author_profile: true
+#taxonomy: projects
+#---
+
 ---
-title: "Projects"
-layout: categories
+title: "Engineering Projects"
+layout: archive
+permalink: /projects/
 author_profile: true
-taxonomy: projects
 ---
+
+<div class="entries-grid">
+  {% for project in site.portfolio %}
+    {% include archive-single.html type="grid" %}
+  {% endfor %}
+</div>
