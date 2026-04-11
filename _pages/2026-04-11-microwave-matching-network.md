@@ -1,18 +1,16 @@
 ---
 title: "Compact Ultra-Broadband Impedance Matching Network"
-date: 2026-04-11
 excerpt: "Design and EM co-simulation of a 3-section Chebyshev transformer achieving 93.6% fractional bandwidth at 2 GHz, miniaturized to a 25.8 × 27.1 mm² footprint."
+categories: 
+  - Project
+tags: 
+  - ECE
+  - Microwave
+  - Hardware
 header:
   teaser: /assets/portfolio_images/3_sec_curved_layout.png
   overlay_image: /assets/portfolio_images/comparison.png
   overlay_filter: 0.6
-sidebar:
-  - title: "Role"
-    text: "RF/Microwave Engineer"
-  - title: "Tools"
-    text: "Keysight ADS"
-  - title: "Key Metrics"
-    text: "• Frequency: 2 GHz<br>• Bandwidth: 93.6%<br>• Size: 25.8 × 27.1 mm²"
 ---
 
 ## 📌 Project Overview
