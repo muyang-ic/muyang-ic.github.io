@@ -1,5 +1,6 @@
 ---
-title: "2026-04-11-Compact Ultra-Broadband Impedance Matching Network"
+layout: single
+title: "Compact Ultra-Broadband Impedance Matching Network"
 excerpt: "Design and EM co-simulation of a 3-section Chebyshev transformer achieving 93.6% fractional bandwidth at 2 GHz, miniaturized to a 25.8 × 27.1 mm² footprint."
 categories: 
   - Project
