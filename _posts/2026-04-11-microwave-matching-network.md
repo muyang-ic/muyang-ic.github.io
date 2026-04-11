@@ -2,7 +2,7 @@
 layout: single
 mathjax: true
 title: "Compact Ultra-Broadband Impedance Matching Network"
-excerpt: "Design and EM co-simulation of a 3-section Chebyshev transformer achieving 93.6% fractional bandwidth at 2 GHz, miniaturized to a 25.8 × 27.1 mm² footprint."
+excerpt: "Design and EM simulation of a 3-section Chebyshev transformer achieving 93.6% fractional bandwidth at 2 GHz, miniaturized to a 25.8 × 27.1 mm² footprint."
 categories: 
   - Project
 tags: 
@@ -26,10 +26,27 @@ header:
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 
-## I.Project Overview
-This project focuses on the design and optimization of a multi-section microstrip impedance matching network. The objective was to match a **200 $\Omega$** lumped resistor load to a **50 $\Omega$** source at a center frequency of 2 GHz. 
+<style>
+  /* 调节文章正文、列表和数学公式的字号 */
+  .page__content p, 
+  .page__content li, 
+  .MathJax {
+    font-size: 1em !important; /* 1em 是默认大小，1.15em 就是放大 15% */
+    line-height: 1.5 !important;  /* 顺便把行距调大一点，让公式不那么拥挤 */
+  }
+  
+  /* 如果你觉得二级标题也偏小，可以取消下面这段的注释来调节标题 */
+  /*
+  .page__content h2 {
+    font-size: 1.8em !important;
+  }
+  */
+</style>
 
-To maximize bandwidth while satisfying strict fabrication constraints, a modified **3-section Chebyshev transformer** was synthesized. Through iterative schematic tuning and layout optimization, the final Momentum electromagnetic (EM) simulation achieved a **93.6% fractional bandwidth** with a highly compact footprint of **25.8 × 27.1 mm²**, significantly exceeding all initial design specifications.
+## I.Project Overview
+This project focuses on the design and optimization of a multi-section microstrip impedance matching network. The objective was to match a 200 $\Omega$ lumped resistor load to a 50 $\Omega$ source at a center frequency of 2 GHz. 
+
+To maximize bandwidth while satisfying strict fabrication constraints, a modified 3-section Chebyshev transformer was synthesized. Through iterative schematic tuning and layout optimization, the final Momentum electromagnetic (EM) simulation achieved a 93.6% fractional bandwidth with a highly compact footprint of 25.8 × 27.1 mm², significantly exceeding all initial design specifications.
 
 ---
 
@@ -48,9 +65,9 @@ $$\gamma_2 = \frac{Z_3 - Z_2}{Z_3 + Z_2} = \frac{145 - 100}{145 + 100} \approx 0
 $$\gamma_1 = \frac{Z_2 - Z_1}{Z_2 + Z_1} \implies Z_1 = Z_2 \frac{1 - \gamma_1}{1 + \gamma_1} \approx 68.97\ \Omega$$
 
 Based on these adjusted impedances, the theoretical initial dimensions synthesized at 2 GHz are:
-* **$Z_1 = 68.97\ \Omega$:** $W_1 = 2.87\text{ mm}$, $L_1 = 27.72\text{ mm}$
-* **$Z_2 = 100\ \Omega$:** $W_2 = 1.38\text{ mm}$, $L_2 = 28.25\text{ mm}$
-* **$Z_3 = 145\ \Omega$:** $W_3 = 0.504\text{ mm}$, $L_3 = 28.73\text{ mm}$
+* $Z_1 = 68.97\ \Omega$: $W_1 = 2.87\text{ mm}$, $L_1 = 27.72\text{ mm}$
+* $Z_2 = 100\ \Omega$: $W_2 = 1.38\text{ mm}$, $L_2 = 28.25\text{ mm}$
+* $Z_3 = 145\ \Omega$: $W_3 = 0.504\text{ mm}$, $L_3 = 28.73\text{ mm}$
 
 ---
 
@@ -75,7 +92,7 @@ A linear connection of the three sections results in a total length exceeding 84
 
 ## IV.EM Simulation and Layout Optimization
 
-An iterative EM-Schematic co-simulation approach was crucial. Initial Momentum simulations revealed severe frequency shifts and performance degradation primarily caused by electromagnetic coupling between closely meandered segments. 
+An iterative EM-Schematic simulation approach was crucial. Initial Momentum simulations revealed severe frequency shifts and performance degradation primarily caused by electromagnetic coupling between closely meandered segments. 
 
 To mitigate this, the physical layout was meticulously optimized within the boundary constraint to maximize spatial separation between traces. Concurrently, schematic parameters were iteratively tuned based on Momentum feedback to pre-compensate for residual coupling and unmodeled pad/via parasitics. 
 
@@ -89,9 +106,9 @@ To mitigate this, the physical layout was meticulously optimized within the boun
 ## V.Results and Performance
 ### A. EM vs. Schematic Comparison
 The overlaid $S_{11}$ results demonstrate excellent agreement between the final schematic and Momentum EM simulations. The layout parasitics introduce only slight variations in null depth and position. 
-* **Center Frequency Return Loss:** $-25.5\text{ dB}$ at $2\text{ GHz}$
-* **$20\text{ dB}$ Bandwidth:** $1.058\text{ GHz}$ to $2.931\text{ GHz}$
-* **Fractional Bandwidth:** **$93.6\%$**
+* Center Frequency Return Loss: $-25.5\text{ dB}$ at $2\text{ GHz}$
+* $20\text{ dB}$ Bandwidth: $1.058\text{ GHz}$ to $2.931\text{ GHz}$
+* Fractional Bandwidth: $93.6\%$
 
 <figure>
   <img src="/assets/portfolio_images/comparison.png" alt="S11 Comparison Chart">
@@ -99,7 +116,7 @@ The overlaid $S_{11}$ results demonstrate excellent agreement between the final 
 </figure>
 
 ### B. Expected Power Loss
-ADS power loss simulations verified the low-loss characteristics of the design. The total power loss ratio at the center frequency is approximately 0.003, translating to a **99.7% transmission efficiency**.
+ADS power loss simulations verified the low-loss characteristics of the design. The total power loss ratio at the center frequency is approximately 0.003, translating to a 99.7% transmission efficiency.
 
 <figure>
   <img src="/assets/portfolio_images/Power_loss.png" alt="Power Loss Graph">
