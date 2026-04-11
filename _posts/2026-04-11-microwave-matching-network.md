@@ -14,6 +14,17 @@ header:
   overlay_image: /assets/portfolio_images/comparison.png
   overlay_filter: 0.6
 ---
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      processEscapes: true
+    }
+  };
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 
 ## Project Overview
 This project focuses on the design and optimization of a multi-section microstrip impedance matching network. The objective was to match a **200 $\Omega$** lumped resistor load to a **50 $\Omega$** source at a center frequency of 2 GHz. 
