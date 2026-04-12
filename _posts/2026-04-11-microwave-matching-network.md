@@ -85,7 +85,6 @@ Based on these adjusted impedances, the theoretical initial dimensions synthesiz
 ## III. Schematic Design and Miniaturization
 ### A. Straight Transformer Tuning
 The calculated dimensions were initially implemented using straight microstrip lines (`MLIN`). Due to our analytical modifications, the initial $S_{11}$ curve slightly deviated from the $-20\text{ dB}$ limit at the ripple peaks. The ADS Tuning tool was utilized to fine-tune section dimensions, re-centering the optimal matching response at 2 GHz.
-
 <figure>
   <img src="/assets/portfolio_images/3_sec_after_tuning.png" alt="Straight Transformer Schematic">
   <figcaption>Schematic of the 3-section transformer after initial tuning.</figcaption>
@@ -93,12 +92,10 @@ The calculated dimensions were initially implemented using straight microstrip l
 
 ### B. Meandered Architecture
 A linear connection of the three sections results in a total length exceeding 84 mm. To satisfy the strict $28 \times 28\text{ mm}^2$ spatial constraint, the network was aggressively meandered using `MCURVE` elements. The electrical length of each stage was conserved by subtracting curve physical lengths from adjacent straight segments. The structure was carefully routed to minimize unwanted parallel trace coupling, followed by subsequent tuning to absorb bend-induced parasitic reactances.
-
 <figure>
   <img src="/assets/portfolio_images/3_sec_curved_after_tuning.png" alt="Curved Transformer Schematic">
   <figcaption>Schematic of the miniaturized meandered 3-section transformer.</figcaption>
 </figure>
-
 ---
 
 ## IV. EM Simulation and Layout Optimization
@@ -106,12 +103,10 @@ A linear connection of the three sections results in a total length exceeding 84
 An iterative EM-Schematic simulation approach was crucial. Initial Momentum simulations revealed severe frequency shifts and performance degradation primarily caused by electromagnetic coupling between closely meandered segments. 
 
 To mitigate this, the physical layout was meticulously optimized within the boundary constraint to maximize spatial separation between traces. Concurrently, schematic parameters were iteratively tuned based on Momentum feedback to pre-compensate for residual coupling and unmodeled pad/via parasitics. 
-
 <figure>
   <img src="/assets/portfolio_images/3_sec_curved_layout.png" alt="Final EM Layout">
   <figcaption>Final Momentum layout of the matching network ($25.8 \times 27.1\text{ mm}^2$).</figcaption>
 </figure>
-
 ---
 
 ## V. Results and Performance
@@ -120,7 +115,6 @@ The overlaid $S_{11}$ results demonstrate excellent agreement between the final 
 * Center Frequency Return Loss: $-25.5\text{ dB}$ at $2\text{ GHz}$
 * $20\text{ dB}$ Bandwidth: $1.058\text{ GHz}$ to $2.931\text{ GHz}$
 * Fractional Bandwidth: $93.6\%$
-
 <figure>
   <img src="/assets/portfolio_images/comparison.png" alt="S11 Comparison Chart">
   <figcaption>Comparison of $S_{11}$ between schematic and Momentum EM simulation.</figcaption>
@@ -128,12 +122,10 @@ The overlaid $S_{11}$ results demonstrate excellent agreement between the final 
 
 ### B. Expected Power Loss
 ADS power loss simulations verified the low-loss characteristics of the design. The total power loss ratio at the center frequency is approximately 0.003, translating to a 99.7% transmission efficiency.
-
 <figure>
   <img src="/assets/portfolio_images/Power_loss.png" alt="Power Loss Graph">
   <figcaption>Expected total loss of the matching network across the frequency band.</figcaption>
 </figure>
-
 ---
 
 ## VI. Conclusion
