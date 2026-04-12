@@ -27,20 +27,24 @@ header:
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 
 <style>
-  /* 调节文章正文、列表和数学公式的字号 */
+  /* 1. 调节文章正文、列表和数学公式的字号与间距 */
   .page__content p, 
   .page__content li, 
   .MathJax {
-    font-size: 0.9em !important; /* 1em 是默认大小，1.15em 就是放大 15% */
-    line-height: 1.7 !important;  /* 顺便把行距调大一点，让公式不那么拥挤 */
+    font-size: 0.9em !important; 
+    line-height: 1.6 !important;  
+    /* 💡 下面这行就是控制段落间距的绝杀！数值越小，段落靠得越紧 */
+    margin-bottom: 0.6em !important; 
   }
   
-  /* 如果你觉得二级标题也偏小，可以取消下面这段的注释来调节标题 */
-  /*
-  .page__content h2 {
-    font-size: 1.8em !important;
+  /* 2. 控制大标题 (##) 和小标题 (###) 周围的间距 */
+  .page__content h2,
+  .page__content h3 {
+    /* 💡 控制标题距离上一段的空白（默认非常大） */
+    margin-top: 0.8em !important;    
+    /* 💡 控制标题距离下一段的空白 */
+    margin-bottom: 0.3em !important; 
   }
-  */
 </style>
 
 ### I. Project Overview
