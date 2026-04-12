@@ -37,13 +37,20 @@ header:
     margin-bottom: 0.6em !important; 
   }
   
-  /* 2. 控制大标题 (##) 和小标题 (###) 周围的间距 */
-  .page__content h2,
+/* 2. 独立控制：大标题 (对应 Markdown 里的 ##) */
+  .page__content h2 {
+    font-size: 1.4em !important;       /* 大标题字号 */
+    margin-top: 1em !important;      /* 距离上文的留白（建议大一点，拉开章节差距） */
+    margin-bottom: 0.5em !important;   /* 距离下文的留白（紧凑一点，压住正文） */
+    /*border-bottom: 1px solid #eee !important; /* 可选：加一条极浅的底线增加专业感 */
+    /*padding-bottom: 0.3em !important;*/
+  }
+
+  /* 3. 独立控制：小标题 (对应 Markdown 里的 ###) */
   .page__content h3 {
-    /* 💡 控制标题距离上一段的空白（默认非常大） */
-    margin-top: 0.8em !important;    
-    /* 💡 控制标题距离下一段的空白 */
-    margin-bottom: 0.3em !important; 
+    font-size: 1.2em !important;       /* 小标题字号 */
+    margin-top: 0.6em !important;      /* 距离上文的留白（比大标题略小） */
+    margin-bottom: 0.3em !important;   /* 距离下文的留白 */
   }
 </style>
 
