@@ -43,14 +43,13 @@ header:
   */
 </style>
 
-## I.Project Overview
+## I. Project Overview
 This project focuses on the design and optimization of a multi-section microstrip impedance matching network. The objective was to match a 200 $\Omega$ lumped resistor load to a 50 $\Omega$ source at a center frequency of 2 GHz. 
 
 To maximize bandwidth while satisfying strict fabrication constraints, a modified 3-section Chebyshev transformer was synthesized. Through iterative schematic tuning and layout optimization, the final Momentum electromagnetic (EM) simulation achieved a 93.6% fractional bandwidth with a highly compact footprint of 25.8 × 27.1 mm², significantly exceeding all initial design specifications.
-
 ---
 
-## II.Rationale Behind Design Choices
+## II. Rationale Behind Design Choices
 ### A. Topology Selection
 To achieve a broadband response well beyond the minimum 40% requirement, a multi-section transformer was chosen over narrow-band stub matching. A Chebyshev polynomial response was targeted for its optimal equal-ripple passband behavior. Although an $N=2$ design would satisfy the minimum criteria, an $N=3$ architecture was pursued to push the theoretical limits of maximum achievable bandwidth.
 
@@ -68,10 +67,9 @@ Based on these adjusted impedances, the theoretical initial dimensions synthesiz
 * $Z_1 = 68.97\ \Omega$: $W_1 = 2.87\text{ mm}$, $L_1 = 27.72\text{ mm}$
 * $Z_2 = 100\ \Omega$: $W_2 = 1.38\text{ mm}$, $L_2 = 28.25\text{ mm}$
 * $Z_3 = 145\ \Omega$: $W_3 = 0.504\text{ mm}$, $L_3 = 28.73\text{ mm}$
-
 ---
 
-## III.Schematic Design and Miniaturization
+## III. Schematic Design and Miniaturization
 ### A. Straight Transformer Tuning
 The calculated dimensions were initially implemented using straight microstrip lines (`MLIN`). Due to our analytical modifications, the initial $S_{11}$ curve slightly deviated from the $-20\text{ dB}$ limit at the ripple peaks. The ADS Tuning tool was utilized to fine-tune section dimensions, re-centering the optimal matching response at 2 GHz.
 
@@ -87,10 +85,9 @@ A linear connection of the three sections results in a total length exceeding 84
   <img src="/assets/portfolio_images/3_sec_curved_after_tuning.png" alt="Curved Transformer Schematic">
   <figcaption>Schematic of the miniaturized meandered 3-section transformer.</figcaption>
 </figure>
-
 ---
 
-## IV.EM Simulation and Layout Optimization
+## IV. EM Simulation and Layout Optimization
 
 An iterative EM-Schematic simulation approach was crucial. Initial Momentum simulations revealed severe frequency shifts and performance degradation primarily caused by electromagnetic coupling between closely meandered segments. 
 
@@ -100,10 +97,9 @@ To mitigate this, the physical layout was meticulously optimized within the boun
   <img src="/assets/portfolio_images/3_sec_curved_layout.png" alt="Final EM Layout">
   <figcaption>Final Momentum layout of the matching network ($25.8 \times 27.1\text{ mm}^2$).</figcaption>
 </figure>
-
 ---
 
-## V.Results and Performance
+## V. Results and Performance
 ### A. EM vs. Schematic Comparison
 The overlaid $S_{11}$ results demonstrate excellent agreement between the final schematic and Momentum EM simulations. The layout parasitics introduce only slight variations in null depth and position. 
 * Center Frequency Return Loss: $-25.5\text{ dB}$ at $2\text{ GHz}$
@@ -122,8 +118,7 @@ ADS power loss simulations verified the low-loss characteristics of the design. 
   <img src="/assets/portfolio_images/Power_loss.png" alt="Power Loss Graph">
   <figcaption>Expected total loss of the matching network across the frequency band.</figcaption>
 </figure>
-
 ---
 
-## VI.Conclusion
+## VI. Conclusion
 A highly compact, 3-section Chebyshev matching network was successfully designed, simulated, and validated. By mathematically reconstructing the impedance profile to navigate fabrication limits and utilizing advanced meandering techniques, the final Momentum layout achieved an exceptional 93.6% fractional bandwidth within a minimal footprint. All performance metrics comfortably exceeded project specifications.
