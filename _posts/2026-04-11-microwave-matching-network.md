@@ -40,7 +40,7 @@ header:
 /* 2. 独立控制：大标题 (对应 Markdown 里的 ##) */
   .page__content h2 {
     font-size: 1.3em !important;       /* 大标题字号 */
-    margin-top: 0.5em !important;      /* 距离上文的留白（建议大一点，拉开章节差距） */
+    margin-top: 0.25em !important;      /* 距离上文的留白（建议大一点，拉开章节差距） */
     margin-bottom: 0.1em !important;   /* 距离下文的留白（紧凑一点，压住正文） */
     /*border-bottom: 1px solid #eee !important; /* 可选：加一条极浅的底线增加专业感 */
     /*padding-bottom: 0.3em !important;*/
