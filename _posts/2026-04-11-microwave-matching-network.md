@@ -53,19 +53,19 @@ header:
   }
 </style>
 
-## 📌 Project Overview
+## I. Project Overview
 This project focuses on the design and optimization of a multi-section microstrip impedance matching network. The objective was to match a 200 $\Omega$ lumped resistor load to a 50 $\Omega$ source at a center frequency of 2 GHz. 
 
 To maximize bandwidth while satisfying strict fabrication constraints, a modified **3-section Chebyshev transformer** was synthesized. Through iterative schematic tuning and layout optimization, the final Momentum electromagnetic (EM) simulation achieved a **93.6% fractional bandwidth** with a highly compact footprint of **25.8 × 27.1 mm²**, significantly exceeding all initial design specifications.
 
 ---
 
-## 🛠 Rationale Behind Design Choices
+## II. Rationale Behind Design Choices
 
-### Topology Selection
+### A. Topology Selection
 To achieve a broadband response well beyond the minimum 40% requirement, a multi-section transformer was chosen over narrow-band stub matching. A Chebyshev polynomial response was targeted for its optimal equal-ripple passband behavior. Although an $N=2$ design would satisfy the minimum criteria, an $N=3$ architecture was pursued to push the theoretical limits of maximum achievable bandwidth.
 
-### Navigating Fabrication Constraints
+### B. Navigating Fabrication Constraints
 According to standard Chebyshev tables (for $\Gamma_m = 0.05$ and an impedance ratio of 4), the required impedance closest to the load must be $Z_3 = 157.95\ \Omega$. However, ADS LineCalc indicated that such a line on the specified Rogers RT/duroid 5880 substrate would have a width of only $0.37\text{ mm}$, directly violating the strict fabrication rule of minimum width $\ge 0.5\text{ mm}$.
 
 To resolve this, the maximum allowable impedance satisfying $W \ge 0.5\text{ mm}$ was calculated to be $145\ \Omega$. To maintain a symmetric reflection profile, the center section impedance was geometrically averaged:
@@ -82,9 +82,9 @@ Based on these adjusted impedances, the theoretical initial dimensions synthesiz
 
 ---
 
-## 📐 Schematic Design and Miniaturization
+## III. Schematic Design and Miniaturization
 
-### Straight Transformer Tuning
+### A. Straight Transformer Tuning
 The calculated dimensions were initially implemented using straight microstrip lines (`MLIN`). Due to our analytical modifications, the initial $S_{11}$ curve slightly deviated from the $-20\text{ dB}$ limit at the ripple peaks. The ADS Tuning tool was utilized to fine-tune section dimensions, re-centering the optimal matching response at 2 GHz.
 
 <figure>
@@ -92,17 +92,17 @@ The calculated dimensions were initially implemented using straight microstrip l
   <figcaption>Schematic of the 3-section transformer after initial tuning.</figcaption>
 </figure>
 
-### Meandered Architecture
+### B. Meandered Architecture
 A linear connection of the three sections results in a total length exceeding 84 mm. To satisfy the strict $28 \times 28\text{ mm}^2$ spatial constraint, the network was aggressively meandered using `MCURVE` elements. The electrical length of each stage was conserved by subtracting curve physical lengths from adjacent straight segments. The structure was carefully routed to minimize unwanted parallel trace coupling, followed by subsequent tuning to absorb bend-induced parasitic reactances.
 
 <figure>
-  <img src="/assets/portfolio_images/new_curved.png" alt="Curved Transformer Schematic" loading="lazy" decoding="async">
+  <img src="/assets/portfolio_images/3_sec_curved_after_tuning.png" alt="Curved Transformer Schematic" loading="lazy" decoding="async">
   <figcaption>Schematic of the miniaturized meandered 3-section transformer.</figcaption>
 </figure>
 
 ---
 
-## 🔬 EM Layout Implementation
+## IV. EM Layout Implementation
 
 For the physical layout, mounting pads for the 0805 resistor were designed with dimensions $W = 0.7\text{ mm}$ and $L = 1.3\text{ mm}$, separated by a $1.7\text{ mm}$ gap. A $0.4\text{ mm}$ diameter via was added to ground the load. The substrate stackup configured for the Momentum simulation, explicitly defining the Rogers 5880 dielectric layer and the via hole, is depicted below.
 
@@ -125,20 +125,20 @@ A rigorous iterative co-simulation approach was employed: we discovered frequenc
 
 ---
 
-## 📊 Simulation Results and Discussion
+## V. Simulation Results and Discussion
 
-### EM vs. Schematic Comparison
+### A. EM vs. Schematic Comparison
 The overlaid $S_{11}$ results demonstrate excellent agreement between the final schematic and Momentum EM simulations. The layout parasitics introduce only slight variations in null depth and position. 
-* **Center Frequency Return Loss:** $-25.5\text{ dB}$ at $2\text{ GHz}$
-* **$20\text{ dB}$ Bandwidth:** $1.058\text{ GHz}$ to $2.931\text{ GHz}$
-* **Fractional Bandwidth:** **$93.6\%$**
+* Center Frequency Return Loss: $-25.5\text{ dB}$ at $2\text{ GHz}$
+* $20\text{ dB}$ Bandwidth: $1.058\text{ GHz}$ to $2.931\text{ GHz}$
+* Fractional Bandwidth: $93.6\%$
 
 <figure>
   <img src="/assets/portfolio_images/comparison.png" alt="S11 Comparison Chart" loading="lazy" decoding="async">
   <figcaption>Comparison of $S_{11}$ between schematic and Momentum EM simulation.</figcaption>
 </figure>
 
-### Calculation of Expected Loss
+### B. Calculation of Expected Loss
 The expected power loss of the passive matching network is evaluated using the principle of energy conservation, defined as:
 $$\text{Loss} = 1 - |S_{11}|^2 - |S_{21}|^2$$
 
@@ -158,7 +158,7 @@ For the Momentum simulation, the loss at 2 GHz is approximately 0.023 (or 2.3%).
 
 ---
 
-## 🏁 Conclusion
+## VI. Conclusion
 A highly compact, 3-section Chebyshev matching network was successfully designed and validated. By mathematically reconstructing the impedance profile to respect the 0.5 mm fabrication limit and utilizing meandering techniques for miniaturization, the final Momentum layout achieved an exceptional 93.6% fractional bandwidth within a $25.8 \times 27.1\text{ mm}^2$ footprint. All performance metrics met or exceeded the project specifications.
 
 <!-- 💡 强制加载后置 MathJax 渲染引擎，极速打开网页 -->
