@@ -59,46 +59,6 @@ America:
     alt: "Yellowstone"
     title: "Yellowstone | Jul 2024"
 
-  - url: /assets/gallery_images/America/Austin_1.jpg
-    image_path: /assets/gallery_images/America/Austin_1.jpg
-    alt: "Austin"
-    title: "Moon Rise | Austin | Mar 2026" 
-
-  - url: /assets/gallery_images/America/Austin_2.jpg
-    image_path: /assets/gallery_images/America/Austin_2.jpg
-    alt: "Austin"
-    title: "Guadalupe St | Austin | Nov 2024" 
-
-  - url: /assets/gallery_images/America/Austin_3.jpg
-    image_path: /assets/gallery_images/America/Austin_3.jpg
-    alt: "Austin"
-    title: "Austin | Dec 2025" 
-
-  - url: /assets/gallery_images/America/Austin_5.jpg
-    image_path: /assets/gallery_images/America/Austin_5.jpg
-    alt: "UT Austin"
-    title: "Welch Hall | UT Austin | Aug 2023" 
-
-  - url: /assets/gallery_images/America/Austin_4.jpg
-    image_path: /assets/gallery_images/America/Austin_4.jpg
-    alt: "Austin"
-    title: "Cat | Austin | Dec 2025" 
-
-  - url: /assets/gallery_images/America/Austin_6.jpg
-    image_path: /assets/gallery_images/America/Austin_6.jpg
-    alt: "Austin"
-    title: "UT Tower | UT Austin | Aug 2023" 
-
-  - url: /assets/gallery_images/America/Austin_7.jpg
-    image_path: /assets/gallery_images/America/Austin_7.jpg
-    alt: "Austin"
-    title: "Austin | Sep 2023" 
-
-  - url: /assets/gallery_images/America/Austin_8.jpg
-    image_path: /assets/gallery_images/America/Austin_8.jpg
-    alt: "Austin"
-    title: "Amphibus | Austin | Sep 2023" 
-
   - url: /assets/gallery_images/America/eclipse_1.jpg
     image_path: /assets/gallery_images/America/eclipse_1.jpg
     alt: "eclipse"

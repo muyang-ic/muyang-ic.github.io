@@ -86,6 +86,14 @@ This is a collection of my photography works. Select an album to explore.
     </div>
   </a>
 
+<div class="category-grid">
+  <a href="/austin/" class="category-card">
+    <div class="category-bg" style="background-image: url('/assets/gallery_images/Austin/Austin_06_26-6.jpg');"></div>
+    <div class="category-content">
+      <h2>Austin</h2>
+    </div>
+  </a>
+
   <a href="/america/" class="category-card">
     <div class="category-bg" style="background-image: url('/assets/gallery_images/America/Yellowstone_1.jpg');"></div>
     <div class="category-content">
