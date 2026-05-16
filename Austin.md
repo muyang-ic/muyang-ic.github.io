@@ -29,6 +29,21 @@ Austin:
     alt: "Austin"
     title: "East Mall | Campus | May 2026" 
 
+  - url: /assets/gallery_images/Austin/Austin_06_26-24.jpg
+    image_path: /assets/gallery_images/Austin/Austin_06_26-24.jpg
+    alt: "Austin"
+    title: "Flowers | North Campus | May 2026" 
+
+  - url: /assets/gallery_images/Austin/Austin_06_26-25.jpg
+    image_path: /assets/gallery_images/Austin/Austin_06_26-25.jpg
+    alt: "Austin"
+    title: "Cool House | Hyde Park | May 2026" 
+
+  - url: /assets/gallery_images/Austin/Austin_06_26-26.jpg
+    image_path: /assets/gallery_images/Austin/Austin_06_26-26.jpg
+    alt: "Austin"
+    title: "Street | Austin | May 2026" 
+
   - url: /assets/gallery_images/Austin/Austin_06_26-16.jpg
     image_path: /assets/gallery_images/Austin/Austin_06_26-16.jpg
     alt: "Austin"
