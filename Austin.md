@@ -4,6 +4,70 @@ layout: single
 author_profile: true
 permalink: /austin/
 Austin:
+  - url: /assets/gallery_images/Austin/Austin_06_26-6.jpg
+    image_path: /assets/gallery_images/Austin/Austin_06_26-6.jpg
+    alt: "Austin"
+    title: "South Mall | Campus | May 2026" 
+
+  - url: /assets/gallery_images/Austin/Austin_06_26-8.jpg
+    image_path: /assets/gallery_images/Austin/Austin_06_26-8.jpg
+    alt: "Austin"
+    title: "South Mall | Campus | May 2026" 
+
+  - url: /assets/gallery_images/Austin/Austin_06_26-10.jpg
+    image_path: /assets/gallery_images/Austin/Austin_06_26-10.jpg
+    alt: "Austin"
+    title: "Circle with Towers | Campus | May 2026" 
+
+  - url: /assets/gallery_images/Austin/Austin_06_26-14.jpg
+    image_path: /assets/gallery_images/Austin/Austin_06_26-14.jpg
+    alt: "Austin"
+    title: "Turtle Pond | Campus | May 2026" 
+
+  - url: /assets/gallery_images/Austin/Austin_06_26-15.jpg
+    image_path: /assets/gallery_images/Austin/Austin_06_26-15.jpg
+    alt: "Austin"
+    title: "East Mall | Campus | May 2026" 
+
+  - url: /assets/gallery_images/Austin/Austin_06_26-16.jpg
+    image_path: /assets/gallery_images/Austin/Austin_06_26-16.jpg
+    alt: "Austin"
+    title: "Downtown | Austin | May 2026" 
+
+  - url: /assets/gallery_images/Austin/Austin_06_26-17.jpg
+    image_path: /assets/gallery_images/Austin/Austin_06_26-17.jpg
+    alt: "Austin"
+    title: "Downtown | Austin | May 2026" 
+
+  - url: /assets/gallery_images/Austin/Austin_06_26-18.jpg
+    image_path: /assets/gallery_images/Austin/Austin_06_26-18.jpg
+    alt: "Austin"
+    title: "Downtown | Austin | May 2026" 
+
+  - url: /assets/gallery_images/Austin/Austin_06_26-19.jpg
+    image_path: /assets/gallery_images/Austin/Austin_06_26-19.jpg
+    alt: "Austin"
+    title: "Downtown | Austin | May 2026" 
+
+  - url: /assets/gallery_images/Austin/Austin_06_26-20.jpg
+    image_path: /assets/gallery_images/Austin/Austin_06_26-20.jpg
+    alt: "Austin"
+    title: "Tiniest Bar | Austin | May 2026" 
+
+  - url: /assets/gallery_images/Austin/Austin_06_26-21.jpg
+    image_path: /assets/gallery_images/Austin/Austin_06_26-21.jpg
+    alt: "Austin"
+    title: "Garage | Austin | May 2026" 
+
+  - url: /assets/gallery_images/Austin/Austin_06_26-22.jpg
+    image_path: /assets/gallery_images/Austin/Austin_06_26-22.jpg
+    alt: "Austin"
+    title: "Sandwich Restaurant | Austin | May 2026" 
+
+  - url: /assets/gallery_images/Austin/Austin_06_26-23.jpg
+    image_path: /assets/gallery_images/Austin/Austin_06_26-23.jpg
+    alt: "Austin"
+    title: "Hyde Park | Austin | May 2026" 
 
   - url: /assets/gallery_images/Austin/Austin_1.jpg
     image_path: /assets/gallery_images/Austin/Austin_1.jpg
