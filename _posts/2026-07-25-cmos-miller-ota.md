@@ -18,9 +18,9 @@ tags:
   .page__content li, 
   .MathJax {
     font-size: 0.9em !important; 
-    line-height: 1.4 !important;  
+    line-height: 1.5 !important;  
     /* 💡 下面这行就是控制段落间距的绝杀！数值越小，段落靠得越紧 */
-    margin-bottom: 0.6em !important; 
+    margin-bottom: 0.5em !important; 
   }
 </style>
 
@@ -31,15 +31,3 @@ The final core performance achieved an open-loop DC gain of 87 dB, a Phase Margi
 For more details, please refer to the complete project report below:
 
 **[Read / Download the Full Project Report (PDF)](/assets/pdfs/CMOS_Two-Stage_Miller_OTA.pdf)**
-
-<!-- 💡 强制加载后置 MathJax 渲染引擎，极速打开网页 -->
-<script>
-  window.MathJax = {
-    tex: {
-      inlineMath: [['$', '$'], ['\\(', '\\)']],
-      displayMath: [['$$', '$$'], ['\\[', '\\]']],
-      processEscapes: true
-    }
-  };
-</script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
