@@ -29,9 +29,9 @@ tags:
     padding-bottom: 0.3em !important;
   }
   .page__content h3 {
-    font-size: 0.8em !important;       
-    margin-top: 1.2em !important;      
-    margin-bottom: 0.4em !important;   
+    font-size: 0.6em !important;       
+    margin-top: 0.3em !important;      
+    margin-bottom: 0.3em !important;   
   }
 </style>
 This project focuses on the design and optimization of a CMOS two-stage Miller compensated operational transconductance amplifier (OTA) based on the TSMC 180nm process. 
