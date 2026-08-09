@@ -16,8 +16,18 @@ mathjax: true
   .MathJax {
     font-size: 0.9em !important; 
     line-height: 1.5 !important;  
-    /* 💡 下面这行就是控制段落间距的绝杀！数值越小，段落靠得越紧 */
     margin-bottom: 0.5em !important; 
+  }
+
+  /* 2. 强制表格整体居中 */
+  .page__content table {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  /* 3. 极大缩小图片容器下方的留白 */
+  .page__content figure {
+    margin-bottom: 0.2em !important; /* 💡 如果觉得还是大，可以改成 0em */
   }
 </style>
 
