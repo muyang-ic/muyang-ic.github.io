@@ -5,9 +5,7 @@ excerpt: "Design and EM co-simulation of a 3-section Chebyshev transformer achie
 categories: 
   - Project
 tags: 
-  - ECE
   - Microwave
-  - Hardware
 ---
 
 <style>
