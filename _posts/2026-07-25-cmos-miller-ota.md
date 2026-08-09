@@ -20,7 +20,7 @@ mathjax: true
     margin-bottom: 0.5em !important; 
   }
 </style>
-**[Read / Download the Full Project Report (PDF)](/assets/pdfs/CMOS_Two-Stage_Miller_OTA.pdf)**
+**[Read / Download the Full Project Report (PDF)](/assets/pdfs/CMOS_Two-Stage_Miller_OTA_4.0.pdf)**
 
 This project focuses on the design and optimization of a CMOS two-stage Miller compensated OTA based on the TSMC 180nm process. 
 
@@ -29,6 +29,7 @@ The schematic of the circuit is presented below:
 <figure>
   <img src="/assets/portfolio_images/opamp_final_sch.png" alt="OTA Schematic" loading="lazy" decoding="async">
 </figure>
+
 Under typical operating conditions ($V_{DD}$ = 1.8 V, 27°C, tt process corner), the circuit achieves the following performance metrics:
 
 | Parameter | Simulated Value |
@@ -46,4 +47,16 @@ Under typical operating conditions ($V_{DD}$ = 1.8 V, 27°C, tt process corner),
 
 For more details, please refer to the complete project report below:
 
-**[Read / Download the Full Project Report (PDF)](/assets/pdfs/CMOS_Two-Stage_Miller_OTA.pdf)**
+**[Read / Download the Full Project Report (PDF)](/assets/pdfs/CMOS_Two-Stage_Miller_OTA_4.0.pdf)**
+
+<!-- 💡 强制加载后置 MathJax 渲染引擎，并识别单 $ 符号 -->
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      processEscapes: true
+    }
+  };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
