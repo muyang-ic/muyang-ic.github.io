@@ -21,12 +21,14 @@ mathjax: true
 
   /* 2. 强制表格整体居中 */
   .page__content table {
+    width: max-content !important; /* 💡 绝杀：解除主题默认的 100% 宽度限制，让表格收缩到内容的真实宽度 */
     margin-left: auto !important;
     margin-right: auto !important;
   }
 
   /* 3. 极大缩小图片容器下方的留白 */
   .page__content figure {
+    margin-top: 0.1em !important; /* 💡 如果觉得还是大，可以改成 0em */
     margin-bottom: 0.2em !important; /* 💡 如果觉得还是大，可以改成 0em */
   }
 </style>
