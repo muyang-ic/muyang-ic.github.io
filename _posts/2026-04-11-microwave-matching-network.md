@@ -12,10 +12,10 @@ This project focuses on the design and optimization of a compact, ultra-broadban
 
 The final Momentum electromagnetic simulation achieved a 93.6% fractional bandwidth and 25.5dB return loss at a 2 GHz center frequency, and a miniaturized footprint of 25.8 × 27.1 mm².
 
-For more details, please refer to the complete project report below:
-
-**[Read / Download the Full Project Report (PDF)](/assets/pdfs/Microwave_Matching_Network.pdf)**
-
 <figure>
   <img src="/assets/portfolio_images/em_layout.png" alt="Electromagnetic layout of the matching network" loading="lazy" decoding="async">
 </figure>
+
+For more details, please refer to the complete project report below:
+
+**[Read / Download the Full Project Report (PDF)](/assets/pdfs/Microwave_Matching_Network.pdf)**
