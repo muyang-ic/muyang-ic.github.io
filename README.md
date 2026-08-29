@@ -1,2 +1,3 @@
-This is repository of my personal website https://muyang-ic.github.io/.
-Huge thanks to developers of Jekyll and Minimal Mistakes.
+# Muyang Chen's Technical Blog
+
+Source for [muyang-ic.github.io](https://muyang-ic.github.io/), built with Jekyll and the [Chirpy theme](https://github.com/cotes2020/jekyll-theme-chirpy).
