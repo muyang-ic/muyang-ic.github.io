@@ -5,9 +5,6 @@ categories: [Projects]
 tags: [Analog IC, OTA, CMOS]
 permalink: /project/cmos-miller-ota/
 math: true
-image:
-  path: /assets/portfolio_images/opamp_final_sch.png
-  alt: Two-stage Miller-compensated OTA schematic
 ---
 
 **[Read / Download the Full Project Report (PDF)](/assets/pdfs/CMOS_Two-Stage_Miller_OTA_4.0.pdf)**

@@ -4,10 +4,9 @@ description: "Design and EM co-simulation of a 3-section Chebyshev transformer a
 categories: [Projects]
 tags: [Microwave, RF, Impedance Matching]
 permalink: /project/microwave-matching-network/
-image:
-  path: /assets/portfolio_images/em_layout.png
-  alt: Electromagnetic layout of the matching network
 ---
+
+**[Read / Download the Full Project Report (PDF)](/assets/pdfs/Microwave_Matching_Network.pdf)**
 
 This project focuses on the design and optimization of a compact, ultra-broadband 3-section Chebyshev impedance matching network on a Rogers RT/duroid 5880 substrate.
 
@@ -16,3 +15,7 @@ The final Momentum electromagnetic simulation achieved a 93.6% fractional bandwi
 For more details, please refer to the complete project report below:
 
 **[Read / Download the Full Project Report (PDF)](/assets/pdfs/Microwave_Matching_Network.pdf)**
+
+<figure>
+  <img src="/assets/portfolio_images/em_layout.png" alt="Electromagnetic layout of the matching network" loading="lazy" decoding="async">
+</figure>

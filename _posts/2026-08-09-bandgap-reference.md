@@ -5,9 +5,6 @@ categories: [Projects]
 tags: [Analog IC, Bandgap Reference, CMOS]
 permalink: /project/bandgap-reference/
 math: true
-image:
-  path: /assets/portfolio_images/bg_final_sch.png
-  alt: CMOS bandgap reference schematic
 ---
 
 **[Read / Download the Full Project Report (PDF)](/assets/pdfs/CMOS_BGR_1.0.pdf)**
